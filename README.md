@@ -1,18 +1,16 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ NuStack Beginings ( CRUD simple start )
 
 Things you may want to cover:
 
 * Ruby version
-
+   6.0.0-alpha
 * System dependencies
-
+  "webpack-dev-server": "^4.3.0"
 * Configuration
 
 * Database creation
-
+  using Sqlite for prototype
 * Database initialization
 
 * How to run the test suite
@@ -20,5 +18,5 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
+  rails s
 * ...
