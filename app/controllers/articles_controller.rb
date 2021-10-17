@@ -1,6 +1,9 @@
 class ArticlesController < ApplicationController
-  #authtentication method 
-   http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+  #authtentication method
+  # http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
+
+  #if not logged in method
+  before_action :logged_in?
 
   #index action for all articles to be available
   def index
