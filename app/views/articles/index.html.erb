@@ -1,12 +1,17 @@
 <h1>Articles page </h1>
 <%= link_to "Home", home_path %>
+  <!-- couter for articles -->
+  Our blog has <%= Article.public_count %> articles and counting!
+
   <ul>
     <!-- loop for array of objects in ruby -->
     <% @articles.each do |article| %>
-      <li>
-        <!-- href with param as title  -->
-        <%= link_to article.title, article %>
-      </li>
+      <% unless article.archived? %>
+        <li>
+          <!-- href with param as title  -->
+          <%= link_to article.title, article %>
+        </li>
+      <% end %>
     <% end %>
   </ul>
 
