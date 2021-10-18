@@ -1,5 +1,5 @@
 # README
- NuStack Beginings ( CRUD simple start )
+Rails 6 basic CRUD app with login Beginings ( CRUD simple start )
 
 Things you may want to cover:
 
